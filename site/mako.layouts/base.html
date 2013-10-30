@@ -1,0 +1,20 @@
+<!DOCTYPE html><%!
+  title = 'Congregation Beth Israel (Malden, MAX)'
+  nav = 'home'
+  basepath = '.'
+%><html lang="en"><head>
+<%def name="base_url(t, url='')">${t.attr.basepath}/${url}</%def>
+<meta charset="utf-8" />
+<meta http-equi="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%block name="title">${self.attr.title}</%block></title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="${base_url(self, 'app/bim.css')}" />
+<link rel="stylesheet/less" href="${base_url(self, 'app/bim.less')}" />
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
+<%include file="google-analytics.html"/>
+</head><body class="${self.attr.nav}">
+<a id="top" href="#content" class="sr-only">Skip to content</a>
+${next.body()}
+<script data-main="${base_url(self, 'app/bim')}" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js"></script>
+</body></html>

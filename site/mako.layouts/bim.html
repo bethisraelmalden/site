@@ -1,0 +1,56 @@
+<%! nav = 'home' %>
+<%inherit file="base.html" />
+<%namespace file="base.html" import="*"/>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="${base_url(self, '')}">
+      <img src="${base_url(self, 'img/bim-logo.svg')}" />
+      <span>Beth Israel Malden</span>
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <%
+        nav_class = {True: 'active', False: ''}
+        links = [
+          ('home', 'Home', ''),
+          ('why-malden', 'Why Malden?', 'pages/why-malden/'),
+          ('donate', 'Donate', 'pages/donate/'),
+          ('financial-aid', 'Financial Aid', 'pages/financial-aid/'),
+          ('religious-life', 'Religious Life', 'pages/religious-life/'),
+          ('about', 'About', 'pages/about/'),
+        ]
+      %>
+      % for id, label, url in links:
+      <li class="${nav_class[id == self.attr.nav]}"><a href="${base_url(self, url)}">${label}</a></li>
+      % endfor
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+<div id="content" class="container">${next.body()}
+</div>
+<footer class="container">
+  <div class="row">
+    <div class="col-xs-6 text-left">
+      <strong>Congregation Beth Israel</strong><br />
+      10 Dexter Street<br />
+      Malden, MA 02148<br />
+      Tel: (781) 322-5686 <br />
+      Fax: (781) 322-6778<br />
+      Tax ID #: 00-0000000<br />
+    </div>
+    <div class="col-xs-6 text-right">
+      <a href="http://ou.org/"><img src="http://images.ou.org/icons/sm/ou_gray18.png" title="OU" alt="OU" style="vertical-align:middle;"/></a> Member Synagogue<br />
+      All content under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons</a>.
+      Site by <a href="http://metaist.com/">Metaist</a>.<br />
+    </div>
+  </div>
+</footer>

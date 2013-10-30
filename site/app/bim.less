@@ -1,0 +1,94 @@
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+.navbar-brand {
+  font-family: 'Georgia', serif;
+  padding: 0 0 0 5px;
+
+  img { height: 2.5em; }
+
+  span {
+    color: #428bca;
+    display: inline-block;
+    font-size: 16pt;
+    font-variant: small-caps;
+    left: 0.25em;
+    position: relative;
+    top: 0.25em;
+  }
+}
+
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 1em;
+  font-size: smaller;
+}
+
+.why-malden {
+  .testimonials {
+    position: relative;
+    background-color: #eee;
+    border-radius: 6px;
+
+    .testimonial {
+      position: relative;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      left: 15%;
+      width: 70%;
+
+      big {
+        font-size: 24pt;
+        line-height: 1;
+      }
+
+      em:before {
+        content: '\2014';
+        margin-right: 0.5em;
+      }
+    }
+
+    .control {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 15%;
+      font-size: 20px;
+
+      span {
+        position: absolute;
+        top: 35%;
+      }
+    }
+
+    .left {
+      padding-left: 1em;
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+      padding-right: 2em;
+      right: 0;
+      left: auto;
+    }
+  }
+
+
+  .thumbnail {
+    img { opacity: 0.4; }
+    h3 { font-size: 1.3em; }
+    margin-bottom: 1em;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: @screen-sm) {}
+
+/* Desktops */
+@media screen and (min-width: @screen-md) {}
+
+/* Large Desktops */
+@media screen and (min-width: @screen-lg) {}
