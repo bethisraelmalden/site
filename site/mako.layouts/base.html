@@ -11,10 +11,13 @@
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="${base_url(self, 'app/bim.css')}" />
 <link rel="stylesheet/less" href="${base_url(self, 'app/bim.less')}" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min.js"></script>
 <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
 <%include file="google-analytics.html"/>
 </head><body class="${self.attr.nav}">
 <a id="top" href="#content" class="sr-only">Skip to content</a>
 ${next.body()}
-<script data-main="${base_url(self, 'app/bim')}" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js"></script>
+<script>require(["${base_url(self, 'app/bim')}"])</script>
+<%block name="scripts"></%block>
 </body></html>

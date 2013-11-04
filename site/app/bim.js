@@ -18,6 +18,5 @@ requirejs.config({
 
 define(function (require) {
   'use strict';
-  require('less');
   require('bootstrap');
 });

@@ -6,16 +6,18 @@
 
 <div class="row">
   <div class="testimonials col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-2">
-    <div class="testimonial">
-      <big>The community is small, but the warmth and welcome is big.</big>
-      <a href="#"><small>Read More</small></a>
-      <em class="source pull-right">Mark & Shani Vegh</em>
-    </div>
+    <ul class="list-unstyled">
+      <li class="testimonial">
+        <big></big>
+        <a href="#show-more">Read more</a>
+        <em class="source"></em>
+      </li>
+    </ul>
 
-    <a class="left control" href="#carousel-example-generic" data-slide="prev">
+    <a class="left control" href="#testimonials" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="right control" href="#carousel-example-generic" data-slide="next">
+    <a class="right control" href="#testimonials" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div>
@@ -65,3 +67,18 @@
     </a>
   </div>
 </div>
+
+<div id="testimonial-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div class="testimonial-content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%block name="scripts">
+<script>require(["${base_url(self, 'app/why-malden')}"]);</script>
+</%block>
