@@ -1,8 +1,8 @@
 <%!
   basepath = '../..'
   nav = 'why-malden'
-%><%inherit file="../../mako.layouts/bim.html"/>
-<%namespace file="../../mako.layouts/base.html" import="*"/>
+%><%inherit file="/layouts.mako/bim.html"/>
+<%namespace file="/layouts.mako/base.html" import="*"/>
 <div class="row">
   <div class="testimonials col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-2">
     <ul class="list-unstyled">
