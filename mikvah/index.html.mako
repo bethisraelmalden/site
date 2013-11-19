@@ -55,7 +55,7 @@
 
 <div id="content" class="container">
   <div class="row">
-    <div class="col-xs-7 col-sm-7 text-center">
+    <div class="col-xs-12 col-sm-7 text-center">
       <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
       <p class="lead">The new mikvah in Malden is now open for business!</p>
       <p><strong>All visits by appointment only.</strong></p>
@@ -66,26 +66,29 @@
         <a href="mailto:mikvah@bethisraelmalden.org">mikvah@bethisraelmalden.org</a>
         <span class="hidden">&bull; <a href="tel:+17813333202">781-333-3202</a></span>
       </p>
-    </div><div class="col-xs-5">
-      <h3>What you need to know</h3>
-      <dl>
-        <dt>Cost</dt>
-        <dd>$25 per visit</dd>
+    </div><div class="col-xs-12 col-sm-5">
+      <hr class="visible-xs" />
+      <div id="facts" class="center-block">
+        <h3 class="text-center">What you need to know</h3>
+        <dl class="center-block">
+          <dt>Cost</dt>
+          <dd>$25 per visit</dd>
 
-        <dt>Address</dt>
-        <dd>
-          <i class="glyphicon glyphicon-map-marker"></i>
-          <a href="#get-directions" data-toggle="modal">
-            10 Dexter St, Malden MA 02148
-          </a>
-        </dd>
+          <dt>Address</dt>
+          <dd>
+            <i class="glyphicon glyphicon-map-marker"></i>
+            <a href="#get-directions" data-toggle="modal">
+              10 Dexter St, Malden MA 02148
+            </a>
+          </dd>
 
-        <dt>Parking</dt>
-        <dd>
-          Far-side of the large parking lot on Dexter St, closest to the
-          building.
-        </dd>
-      </dl>
+          <dt>Parking</dt>
+          <dd>
+            Far-side of the large parking lot on Dexter St, closest to the
+            building.
+          </dd>
+        </dl>
+      </div>
     </div>
   </div>
 </div>
@@ -161,7 +164,7 @@
 <footer class="text-center">
   <p>
     &copy; 2013 by <a href="http://bethisraelmalden.org">Congregation Beth Israel</a>.
-    Site by <a href="http://metaist.com">Metaist</a>.
+    Site by <a href="http://metaist.com">Metaist</a>. (Build 2013118.03)
   </p>
 </footer>
 
