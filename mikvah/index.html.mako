@@ -4,7 +4,7 @@
   url_directions = 'https://mapsengine.google.com/map/edit?mid=zSZg6r3oJwJ8.k894bUrdtCoI'
 %><html lang="en"><head>
 <meta charset="utf-8" />
-<meta http-equi="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mikvah Mayanei Tovah (Beth Israel of Malden)</title>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
@@ -28,7 +28,7 @@
       <span class="icon-bar"></span>
     </button>
     <a class="navbar-brand" href="${url_bim}">
-      <img src="bim-logo.svg" />
+      <img alt="BIM Logo" src="bim-logo.svg" />
       <span>Beth Israel Malden</span>
     </a>
   </div>
@@ -52,9 +52,10 @@
     </div>
   </div>
 </div>
+
 <div id="content" class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-2 text-center">
+    <div class="col-xs-7 col-sm-7 text-center">
       <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
       <p class="lead">The new mikvah in Malden is now open for business!</p>
       <p><strong>All visits by appointment only.</strong></p>
@@ -65,10 +66,9 @@
         <a href="mailto:mikvah@bethisraelmalden.org">mikvah@bethisraelmalden.org</a>
         <span class="hidden">&bull; <a href="tel:+17813333202">781-333-3202</a></span>
       </p>
-    </div><div class="col-xs-2 visible-xs">&nbsp;
-    </div><div class="col-xs-10 col-sm-6 col-md-3 col-md-offset-1">
+    </div><div class="col-xs-5">
       <h3>What you need to know</h3>
-      <dl class="">
+      <dl>
         <dt>Cost</dt>
         <dd>$25 per visit</dd>
 
